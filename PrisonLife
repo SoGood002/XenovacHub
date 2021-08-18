@@ -10,24 +10,24 @@ local tab = win:Tab("Main", "http://www.roblox.com/asset/?id=6023426915")
 tab:Label("This is a Gun")
 tab:Line()
 
-tab:Button("ShotGun", "This function may not work sometimes and you can get banned.", function()
-Flux:Notification("Killed all players successfully!", "Alright")
+tab:Button("ShotGun", "This function let you get Remington 870.", function()
+Flux:Notification("Get Remington 870  Successfully!", "Alright")
 wait()
 local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["Remington 870"].ITEMPICKUP
 local Event = game:GetService("Workspace").Remote.ItemHandler
 Event:InvokeServer(A_1)
 end)
 
-tab:Button("AK-47", "This function may not work sometimes and you can get banned.", function()
-Flux:Notification("Killed all players successfully!", "Alright")
+tab:Button("AK-47", "This function let you get AK-47.", function()
+Flux:Notification("Get AK-47 Successfully!", "Alright")
 wait()
 local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["AK-47"].ITEMPICKUP
 local Event = game:GetService("Workspace").Remote.ItemHandler
 Event:InvokeServer(A_1)
 end)
 
-tab:Button("M9", "This function may not work sometimes and you can get banned.", function()
-Flux:Notification("Killed all players successfully!", "Alright")
+tab:Button("M9", "This function let you get M9.", function()
+Flux:Notification("Get M9 Successfully!", "Alright")
 wait()
 local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["M9"].ITEMPICKUP
 local Event = game:GetService("Workspace").Remote.ItemHandler
@@ -42,7 +42,7 @@ tab:Slider("Walkspeed", "Makes your faster.", 16, 100,1,function(v)
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
 print(t)
 end)
-tab:Slider("Jumppower", "Makes your faster.", 49, 100,1,function(v)
+tab:Slider("Jumppower", "Makes your jump higher.", 49, 100,1,function(v)
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
 print(t)
 end)
