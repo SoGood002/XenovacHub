@@ -1,0 +1,55 @@
+local ui = game:GetService("CoreGui"):FindFirstChild("FluxLib")
+if ui then
+    ui:Destroy()
+end
+local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/fluxlib.txt")()
+
+local win = Flux:Window("Xenovac Hub", "Prison Life", Color3.fromRGB(255, 110, 48), Enum.KeyCode.LeftControl)
+local tab = win:Tab("Main", "http://www.roblox.com/asset/?id=6023426915")
+
+tab:Label("This is a Gun")
+tab:Line()
+
+tab:Button("ShotGun", "This function may not work sometimes and you can get banned.", function()
+Flux:Notification("Killed all players successfully!", "Alright")
+wait()
+local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["Remington 870"].ITEMPICKUP
+local Event = game:GetService("Workspace").Remote.ItemHandler
+Event:InvokeServer(A_1)
+end)
+
+tab:Button("AK-47", "This function may not work sometimes and you can get banned.", function()
+Flux:Notification("Killed all players successfully!", "Alright")
+wait()
+local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["AK-47"].ITEMPICKUP
+local Event = game:GetService("Workspace").Remote.ItemHandler
+Event:InvokeServer(A_1)
+end)
+
+tab:Button("M9", "This function may not work sometimes and you can get banned.", function()
+Flux:Notification("Killed all players successfully!", "Alright")
+wait()
+local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver["M9"].ITEMPICKUP
+local Event = game:GetService("Workspace").Remote.ItemHandler
+Event:InvokeServer(A_1)
+end)
+
+tab:Line()
+
+tab:Label("Speed and Jump")
+tab:Line()
+tab:Slider("Walkspeed", "Makes your faster.", 16, 100,1,function(v)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+print(t)
+end)
+tab:Slider("Jumppower", "Makes your faster.", 49, 100,1,function(v)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+print(t)
+end)
+
+tab:Line()
+
+local tab = win:Tab("Credit", "http://www.roblox.com/asset/?id=6023426915")
+tab:Label("Pass Left Ctrl To Open/Close Gui")
+tab:Label("Discord : discord.gg/96NtVTkVER")
+tab:Label("Credit : Xenovac Exploit")
